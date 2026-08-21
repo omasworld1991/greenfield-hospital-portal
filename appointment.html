@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome To Greenfield</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header-section">
+      <a href="index.html">
+        <img
+          src="image/greenfield-hospital-logo.svg"
+          alt="hospital logo"
+          loading="lazy"
+          width="30"
+          height="30"
+        />
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="appointment.html">Appointment</a>
+      </nav>
+    </header>
+    <h1>Greenfield Hospital Patient Registration Form</h1>
+    <hr />
+    <p>
+      Please fill out the form below to register as a new patient to see a
+      doctor.
+    </p>
+    <p><strong>*</strong> indicates a required field</p>
+    <form action="#" method="post">
+      <fieldset>
+        <legend><strong>Personal Information</strong></legend>
+        <br />
+        <label for="patientfirstname">First Name:<strong>*</strong></label>
+        <input
+          type="text"
+          id="patientfirstname"
+          name="patientfirstname"
+          required
+        />
+        <label for="patientlastname">Last Name: <strong>*</strong></label>
+        <input
+          type="text"
+          id="patientlastname"
+          name="patientlastname"
+          required
+        />
+        <label for="photo">Passport Photograph: <strong>*</strong></label>
+        <input type="file" id="photo" name="photo" accept="image/*" required />
+        <br /><br />
+        <label for="gender">Gender: <strong>*</strong></label>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" required />
+        <label for="prefernottosay">Prefer not to say</label>
+        <input
+          type="radio"
+          id="prefernottosay"
+          name="prefernottosay"
+          value="prefernottosay"
+          required
+        />
+        <label for="maritalstatus">Marital Status: <strong>*</strong></label>
+        <select id="maritalstatus" name="marital status" required>
+          <option value="">Select</option>
+          <option value="single">Single</option>
+          <option value="married">Married</option>
+          <option value="divorced">Divorced</option>
+          <option value="widowed">Widowed</option>
+        </select>
+        <label for="dob">Date of Birth: <strong>*</strong></label>
+        <input type="date" id="dob" name="dob" required />
+        <br /><br />
+        <label for="religion">Religion: <strong>*</strong></label>
+        <select id="religion" name="religion" required>
+          <option value="">Select</option>
+          <option value="christianity">Christianity</option>
+          <option value="islam">Islam</option>
+          <option value="traditional">Traditional</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="occupation">Occupation: <strong>*</strong></label>
+        <input type="text" id="occupation" name="occupation" required />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend><strong>Contact Information</strong></legend>
+        <br />
+        <label for="address">Residential Address: <strong>*</strong></label>
+        <textarea
+          id="address"
+          name="address"
+          rows="2"
+          cols="50"
+          placeholder="Enter your residential address"
+          required
+        ></textarea>
+        <label for="nationality">Nationality: <strong>*</strong></label>
+        <select id="nationality" name="nationality" required>
+          <option value="">Select</option>
+          <option value="Nigeria">Nigeria</option>
+          <option value="Ghana">Ghana</option>
+          <option value="Cameroon">Cameroon</option>
+          <option value="Benin">Benin</option>
+          <option value="Other">Other</option>
+        </select>
+        <label for="state">State: <strong>*</strong></label>
+        <select id="state" name="state" required>
+          <option value="">Select</option>
+          <option value="AB">Abia</option>
+          <option value="AD">Adamawa</option>
+          <option value="AN">Anambra</option>
+          <option value="BA">Bauchi</option>
+          <option value="BE">Benue</option>
+          <option value="BO">Borno</option>
+          <option value="CR">Cross River</option>
+          <option value="DE">Delta</option>
+          <option value="EB">Ebonyi</option>
+          <option value="ED">Edo</option>
+          <option value="EK">Ekiti</option>
+          <option value="EN">Enugu</option>
+          <option value="GO">Gombe</option>
+          <option value="IM">Imo</option>
+          <option value="JI">Jigawa</option>
+          <option value="KD">Kaduna</option>
+          <option value="KN">Kano</option>
+          <option value="KT">Katsina</option>
+          <option value="KE">Kebbi</option>
+          <option value="KO">Kogi</option>
+          <option value="KW">Kwara</option>
+          <option value="LA">Lagos</option>
+          <option value="NA">Nasarawa</option>
+          <option value="NI">Niger</option>
+          <option value="OG">Ogun</option>
+          <option value="ON">Ondo</option>
+          <option value="OS">Osun</option>
+          <option value="OY">Oyo</option>
+          <option value="PL">Plateau</option>
+          <option value="RI">Rivers</option>
+          <option value="SO">Sokoto</option>
+          <option value="TA">Taraba</option>
+          <option value="YO">Yobe</option>
+          <option value="ZA">Zamfara</option>
+          <option value="FC">Federal Capital Territory</option>
+        </select>
+        <label for="city">City: <strong>*</strong></label>
+        <input type="text" id="city" name="city" required />
+        <br /><br />
+        <label for="email">Email: <strong>*</strong></label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <label for="phone">Phone Number: <strong>*</strong></label>
+        <input type="tel" id="phone" name="phone" required />
+        <label for="lga">LGA: <strong>*</strong></label>
+        <input type="text" id="lga" name="lga" required />
+        <label for="town">Town: <strong>*</strong></label>
+        <input type="text" id="town" name="town" required />
+        <br /><br />
+        <label for="emergencyname"
+          >Emergency Contact Name: <strong>*</strong></label
+        >
+        <input
+          type="text"
+          id="emergencyname"
+          name="emergencycontact"
+          placeholder="Enter full name"
+          required
+        />
+        <label for="emergencyphone"
+          >Emergency Contact Phone Number: <strong>*</strong></label
+        >
+        <input
+          type="tel"
+          id="emegencyphone"
+          name="emergencyphone"
+          placeholder="e.g 08036687331"
+          required
+        />
+        <label for="relationtopatient"
+          >Relationship To Patient: <strong>*</strong></label
+        >
+        <select
+          id="relationshiptopatient"
+          name="relationshiptopatient"
+          required
+        >
+          <option value="">Select</option>
+          <option value="father">Father</option>
+          <option value="mother">Mother</option>
+          <option value="spouse">Spouse</option>
+          <option value="brother">Brother</option>
+          <option value="sister">Sister</option>
+          <option value="son">Son</option>
+          <option value="daughter">Daughter</option>
+          <option value="guardian">Guardian</option>
+          <option value="friend">Friend</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend><strong>Hospital Information</strong></legend>
+        <br />
+        <label for="hospitalnumber">Hospital Number: <strong>*</strong></label>
+        <input
+          type="text"
+          id="hospitalnumber"
+          name="hospital number"
+          required
+        />
+        <label for="dor">Date of Registration: <strong>*</strong></label>
+        <input type="date" id="dor" name="date" required />
+        <label for="patientcategory"
+          >Patient Category: <strong>*</strong></label
+        >
+        <select id="patientcategory" name="patientcategory" required>
+          <option value="">Select</option>
+          <option value="outpatient">Outpatient</option>
+          <option value="inpatient">Inpatient</option>
+          <option value="emergency">Emergency</option>
+        </select>
+        <label for="clinic">Clinic/Department: <strong>*</strong></label>
+        <select id="clinic" name="clinic" required>
+          <option value="">Select</option>
+          <option value="generaloutpatient">General Outpatient (GOPD)</option>
+          <option value="gensurg">General Surgery</option>
+          <option value="ENT">Ear Nose and Throat</option>
+          <option value="plastic">Plastic</option>
+          <option value="urology">Urology</option>
+          <option value="opthal">Opthalmology</option>
+          <option value="neuro">Neurology</option>
+          <option value="ortho">Orthopedics</option>
+          <option value="familymedicine">Family Medicine</option>
+          <option value="paed">Paediatrics</option>
+          <option value="obstetrics">Obstetrics & Gynaecology</option>
+          <option value="theatre">Theatre</option>
+          <option value="omf">Maxilofacial</option>
+          <option value="dentistry">Dentisty</option>
+          <option value="accident-emergency">Accident & Emergency</option>
+        </select>
+        <br /><br />
+        <label for="healthinsurance"
+          >Health Insurance: <strong>*</strong></label
+        >
+        <select id="healthinsurance" name="healthinsurance" required>
+          <option value="">Select</option>
+          <option value="nhia">NHIA</option>
+          <option value="hmo">HMO</option>
+          <option value="privateinsurance">Private Insurance</option>
+          <option value="selfpay">Self-Pay</option>
+        </select>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend><strong>Medical Information</strong></legend>
+        <br />
+        <label for="bloodgroup">Blood Group: <strong>*</strong></label>
+        <select id="bloodgroup" name="bloodgroup" required>
+          <option value="">Select</option>
+          <option value="a+">A+</option>
+          <option value="a-">A-</option>
+          <option value="b+">B+</option>
+          <option value="a+">B-</option>
+          <option value="ab+">AB+</option>
+          <option value="ab-">AB-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+        </select>
+        <label for="genotype">Genotype: <strong>*</strong></label>
+        <select id="genotype" name="genotype" required>
+          <option value="">Select</option>
+          <option value="aa">AA</option>
+          <option value="as">AS</option>
+          <option value="ac">AC</option>
+          <option value="ss">SS</option>
+          <option value="sc">SC</option>
+        </select>
+        <label for="rhesusfactor">Rhesus Factor: <strong>*</strong></label>
+        <select id="rhesusfactor" name="rhesusfactor" required>
+          <option value="">Select</option>
+          <option value="positive">Positive (+)</option>
+          <option value="negative">Negative (-)</option>
+        </select>
+        <br />
+        <label for="allergystatus"
+          >Do You Have Any Known Allergy? <strong>*</strong></label
+        >
+        <label for="yes">Yes</label>
+        <input
+          type="radio"
+          id="yes"
+          name="allergystatus"
+          value="yes"
+          required
+        />
+        <label for="no">No</label>
+        <input type="radio" id="no" name="allergystatus" value="no" required />
+        <label for="allergydetails">If Yes, Specify:</label>
+        <textarea
+          id="allergydetails"
+          name="allergydetails"
+          rows="3"
+          cols="50"
+          placeholder="e.g Penicillin, Seafood"
+        ></textarea>
+        <br /><br />
+        <label for="medicalhistory">Medical History: <strong>*</strong></label>
+        <textarea
+          id="medicalhistory"
+          name="medicalhistory"
+          rows="3"
+          cols="50"
+          placeholder="Past Medical Conditions"
+        ></textarea>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend><strong>Next Of Kin</strong></legend>
+        <br />
+        <label for="kinfirstname">First Name: <strong>*</strong></label>
+        <input type="text" id="kinfirstname" name="kinfirstname" required />
+        <label for="kinlastname">Last Name: <strong>*</strong></label>
+        <input type="text" id="kinlastname" name="kinlastname" required />
+        <label for="gender">Gender: <strong>*</strong></label>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" required />
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="other" required />
+        <br /><br />
+        <label for="kinmaritalstatus">Marital Status: <strong>*</strong></label> 
+        <select id="kinmaritalstatus" name="kinmaritalstatus" required>
+          <option value="">Select</option>
+          <option value="single">Single</option>
+          <option value="married">Married</option>
+          <option value="divorced">Divorced</option>
+          <option value="widowed">Widowed</option>
+        </select>
+        <label for="dob">Date of Birth: <strong>*</strong></label>
+        <input type="date" id="dob" name="dob" required />
+        <label for="religion">Religion: <strong>*</strong></label>
+        <select id="religion" name="religion" required>
+          <option value="">Select</option>
+          <option value="christianity">Christianity</option>
+          <option value="islam">Islam</option>
+          <option value="traditional">Traditional</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="occupation">Occupation: <strong>*</strong></label>
+        <input type="text" id="occupation" name="occupation" required />
+        <label for="email">Email: <strong>*</strong></label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <br /><br />
+        <label for="phone">Phone Number: <strong>*</strong></label>
+        <input type="tel" id="phone" name="phone" required />
+        <label for="relationtopatient"
+          >Relationship To Patient: <strong>*</strong></label
+        >
+        <select
+          id="relationshiptopatient"
+          name="relationshiptopatient"
+          required
+        >
+          <option value="">Select</option>
+          <option value="father">Father</option>
+          <option value="mother">Mother</option>
+          <option value="spouse">Spouse</option>
+          <option value="brother">Brother</option>
+          <option value="sister">Sister</option>
+          <option value="son">Son</option>
+          <option value="daughter">Daughter</option>
+          <option value="guardian">Guardian</option>
+          <option value="friend">Friend</option>
+          <option value="other">Other</option>
+        </select>
+        <br /><br />
+        <label for="address">Residential Address: <strong>*</strong></label>
+        <textarea
+          id="address"
+          name="address"
+          rows="2"
+          cols="50"
+          placeholder="Enter your residential address"
+          required
+        ></textarea>
+        <label for="nationality">Nationality: <strong>*</strong></label>
+        <select id="nationality" name="nationality" required>
+          <option value="">Select</option>
+          <option value="Nigeria">Nigeria</option>
+          <option value="Ghana">Ghana</option>
+          <option value="Cameroon">Cameroon</option>
+          <option value="Benin">Benin</option>
+          <option value="Other">Other</option>
+        </select>
+        <label for="state">State: <strong>*</strong></label>
+        <select id="state" name="state" required>
+          <option value="">Select</option>
+          <option value="AB">Abia</option>
+          <option value="AD">Adamawa</option>
+          <option value="AN">Anambra</option>
+          <option value="BA">Bauchi</option>
+          <option value="BE">Benue</option>
+          <option value="BO">Borno</option>
+          <option value="CR">Cross River</option>
+          <option value="DE">Delta</option>
+          <option value="EB">Ebonyi</option>
+          <option value="ED">Edo</option>
+          <option value="EK">Ekiti</option>
+          <option value="EN">Enugu</option>
+          <option value="GO">Gombe</option>
+          <option value="IM">Imo</option>
+          <option value="JI">Jigawa</option>
+          <option value="KD">Kaduna</option>
+          <option value="KN">Kano</option>
+          <option value="KT">Katsina</option>
+          <option value="KE">Kebbi</option>
+          <option value="KO">Kogi</option>
+          <option value="KW">Kwara</option>
+          <option value="LA">Lagos</option>
+          <option value="NA">Nasarawa</option>
+          <option value="NI">Niger</option>
+          <option value="OG">Ogun</option>
+          <option value="ON">Ondo</option>
+          <option value="OS">Osun</option>
+          <option value="OY">Oyo</option>
+          <option value="PL">Plateau</option>
+          <option value="RI">Rivers</option>
+          <option value="SO">Sokoto</option>
+          <option value="TA">Taraba</option>
+          <option value="YO">Yobe</option>
+          <option value="ZA">Zamfara</option>
+          <option value="FC">Federal Capital Territory</option>
+        </select>
+        <label for="city">City: <strong>*</strong></label>
+        <input type="text" id="city" name="city" required />
+        <br /><br />
+        <label for="lga">LGA: <strong>*</strong></label>
+        <input type="text" id="lga" name="lga" required />
+        <label for="town">Town: <strong>*</strong></label>
+        <input type="text" id="town" name="town" required />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend><strong>Uploads</strong></legend>
+        <br />
+        <label for="referralletter">Upload Referral Letter (Optional):</label>
+        <input
+          type="file"
+          id="referralletter"
+          name="referralletter"
+          accept="image/*,.pdf"
+        />
+      </fieldset>
+      <br />
+      <input type="checkbox" id="consent" name="consent" />
+      <label for="consent">
+        I consent that the information provided is true and correct</label
+      >
+      <br /><br />
+      <button type="submit">Register Patient</button>
+      <button type="reset">Clear Form</button>
+    </form>
+  </body>
+</html>

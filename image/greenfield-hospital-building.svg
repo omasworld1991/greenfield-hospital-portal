@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- Sky -->
+  <rect x="0" y="0" width="800" height="500" fill="#eaf6f6"/>
+  <!-- Sun -->
+  <circle cx="700" cy="70" r="40" fill="#ffe08a"/>
+  <!-- Ground -->
+  <rect x="0" y="430" width="800" height="70" fill="#bfe3b4"/>
+
+  <!-- Trees -->
+  <g>
+    <rect x="50" y="380" width="12" height="50" fill="#8a5a34"/>
+    <circle cx="56" cy="365" r="35" fill="#5fa85f"/>
+    <rect x="720" y="390" width="12" height="40" fill="#8a5a34"/>
+    <circle cx="726" cy="375" r="30" fill="#5fa85f"/>
+  </g>
+
+  <!-- Main hospital building -->
+  <rect x="180" y="170" width="440" height="260" fill="#f5f7fa" stroke="#c7d0d9" stroke-width="2"/>
+  <!-- Center tower -->
+  <rect x="330" y="100" width="140" height="330" fill="#ffffff" stroke="#c7d0d9" stroke-width="2"/>
+
+  <!-- Roof line accents -->
+  <rect x="180" y="160" width="440" height="12" fill="#4a9d8f"/>
+  <rect x="330" y="90" width="140" height="12" fill="#3d8a7d"/>
+
+  <!-- Windows left wing -->
+  <g fill="#8fd0e8" stroke="#5aa8c2" stroke-width="1.5">
+    <rect x="205" y="200" width="35" height="45"/>
+    <rect x="260" y="200" width="35" height="45"/>
+    <rect x="205" y="270" width="35" height="45"/>
+    <rect x="260" y="270" width="35" height="45"/>
+    <rect x="205" y="340" width="35" height="45"/>
+    <rect x="260" y="340" width="35" height="45"/>
+  </g>
+
+  <!-- Windows right wing -->
+  <g fill="#8fd0e8" stroke="#5aa8c2" stroke-width="1.5">
+    <rect x="505" y="200" width="35" height="45"/>
+    <rect x="560" y="200" width="35" height="45"/>
+    <rect x="505" y="270" width="35" height="45"/>
+    <rect x="560" y="270" width="35" height="45"/>
+    <rect x="505" y="340" width="35" height="45"/>
+    <rect x="560" y="340" width="35" height="45"/>
+  </g>
+
+  <!-- Tower windows -->
+  <g fill="#8fd0e8" stroke="#5aa8c2" stroke-width="1.5">
+    <rect x="355" y="130" width="30" height="40"/>
+    <rect x="415" y="130" width="30" height="40"/>
+    <rect x="355" y="190" width="30" height="40"/>
+    <rect x="415" y="190" width="30" height="40"/>
+    <rect x="355" y="250" width="30" height="40"/>
+    <rect x="415" y="250" width="30" height="40"/>
+  </g>
+
+  <!-- Hospital cross on tower -->
+  <g>
+    <rect x="388" y="105" width="24" height="8" fill="#e6564c"/>
+    <rect x="396" y="97" width="8" height="24" fill="#e6564c"/>
+  </g>
+
+  <!-- Entrance -->
+  <rect x="365" y="360" width="70" height="70" fill="#4a9d8f"/>
+  <rect x="375" y="370" width="22" height="60" fill="#ffffff" opacity="0.85"/>
+  <rect x="403" y="370" width="22" height="60" fill="#ffffff" opacity="0.85"/>
+
+  <!-- Entrance canopy -->
+  <rect x="350" y="352" width="100" height="10" fill="#3d8a7d"/>
+
+  <!-- Sign board -->
+  <rect x="300" y="440" width="200" height="36" rx="6" fill="#2f6f66"/>
+  <text x="400" y="464" font-family="Arial, sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">GREENFIELD HOSPITAL</text>
+</svg>

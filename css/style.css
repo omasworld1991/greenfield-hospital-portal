@@ -1,0 +1,484 @@
+/* ==============================
+   GENERAL BODY STYLING
+   ============================== */
+
+body {
+    font-family: "Segoe UI", "Courier New", "Times New Roman", Poppins, monospace, Verdana, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   HEADER GENERAL STYLING
+   ============================== */
+
+/* Header styling */
+.header-section {
+    background-color: #fff;
+    padding: 15px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Header logo */
+.header-section img {
+    width: 70px;
+    height: auto;
+}
+
+/* Header navigation links */
+.header-section nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-right: 20px;
+}
+/* Active navigation link */
+.header-section nav .active {
+    background-color: #198754;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+/* Header navigation hover effect */
+.header-section nav a:hover {
+    color: #198754;
+}
+
+/* Keep active Home text white on hover */
+.header-section nav .active:hover {
+    background-color: #146c43;
+    color: white;
+}
+
+/* ==============================
+   HERO SECTION
+   ============================== */
+
+/* Entire hero section */
+.hero-section {
+    text-align: center;
+    padding: 0;
+}
+
+/* Hero slider container */
+.hero-slider {
+    width: 100%;
+}
+
+/* Individual Hero slide styling */
+.hero-slide {
+display: none;
+    position: relative;
+    min-height: 600px;
+    overflow: hidden;
+}
+/* Only active slide is visible */
+.hero-slide.active {
+    display:flex;
+}
+
+/* Hero image */
+.hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hero image itself */
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* Dark overlay over image */
+.hero-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+/* Hero content sits on top of image */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Hero heading */
+.hero-content h1,
+.hero-content h2 {
+    font-size: clamp(40px, 6vw, 60px);
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* Hero paragraph */
+.hero-content p {
+    font-size: clamp(18px, 2.5vw, 22px);
+    margin-bottom: 35px;
+}
+
+/* Hero buttons */
+.hero-content a {
+    display: inline-block;
+    padding: clamp(12px, 2vw, 14px) clamp(24px, 3vw, 30px);
+    background-color: #198754;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 10px;
+    font-weight: bold;
+}
+ 
+/* ==============================
+   WHY CHOOSE US SECTION
+   ============================== */
+
+/* Why Choose Us heading */
+.why-choose-us-section h2 {
+    font-size: clamp(26px, 3vw, 30px);
+    color: #198754;
+    text-align: center;
+    margin-bottom: 40px;
+   padding: clamp(30px, 5vw, 60px) clamp(20px, 5vw, 80px);
+}
+
+/* Why Choose Us list */
+.why-choose-us-section ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Why Choose Us list items */
+.why-choose-us-section li {
+    background-color: #e8f5e9;
+    padding: 18px 25px;
+    margin-bottom: 15px;
+    border-left: 5px solid #198754;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Why Choose Us hover effect */
+.why-choose-us-section li:hover {
+    background-color: #d1e7dd;
+    transform: translateX(8px);
+    cursor: pointer;
+}
+
+/* ==============================
+   DEPARTMENTS SECTION
+   ============================== */
+
+/* Department section */
+.departments-section {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+}
+
+/* Department heading */
+.departments-section h2 {
+    text-align: center;
+    color: #198754;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+/* Department list */
+.departments-section ul {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Department list items */
+.departments-section li {
+    background-color: white;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 600;
+}
+
+/* Department hover effect */
+.departments-section li:hover {
+    background-color: #198754;
+    color: white;
+    transform: translateX(10px);
+    cursor: pointer;
+}
+
+
+/* ==============================
+   MANAGEMENT TEAM SECTION
+   ============================== */
+
+/* Management team section */
+.management-team-section {
+    background-color: white;
+     padding: clamp(40px, 6vw, 60px) clamp(20px, 5vw, 80px);
+    text-align: center;
+}
+
+/* Management team heading */
+.management-team-section h2 {
+    color: #198754;
+    font-size: clamp(26px, 3vw, 30px);
+    margin-bottom: 15px;
+}
+
+/* Management team P introduction */
+.management-team-section > p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: clamp(17px, 2vw, 18px);
+    text-align: center;
+}
+
+/* Doctor cards parent container */
+.doctor-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Doctor card */
+.doctor-card {
+    flex: 1 1 280px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+/* Doctor card hover effect */
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Doctor name */
+.doctor-card strong {
+    color: #198754;
+    font-size: 22px;
+}
+
+/* Doctor card image */
+.doctor-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ==============================
+   PATIENT TESTIMONIALS SECTION
+   ============================== */
+/* Parent Testimonials section styling */
+.testimonials-section {
+    background-color: #f8f9fa;
+    padding: clamp(40px, 6vw, 80px) clamp(20px, 5vw, 60px);
+     text-align: center;
+}
+
+/* Testimonial heading h2 styling */
+.testimonials-section h2 {
+    color: #198754;
+    font-size: clamp(26px, 3vw, 30px);
+    margin-bottom: 40px;
+}
+/* Testimonials cards section and div parent container */
+.testimonials {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* Individual testimonial article child card styling */
+.testimonial {
+    flex: 1 1 280px;
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+/* Testimonial card hover effect */
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+/* Remove default blockquote margin styling */
+.testimonial blockquote {
+    margin: 0;
+}
+/* testimonial paragraph message styling */
+.testimonial p { 
+    font-size: 17px;
+    line-height: 1.6;
+    color: #555;
+    font-style: italic;
+}
+/* Testimonial rating styling */
+.testimonial .rating {
+     color: #ffc107; 
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+.testimonial:hover .rating {
+    color: #198754;
+}
+/* Testimonial footer styling */
+.testimonial footer {
+    margin-top: 20px;
+    color: #198754;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* ==============================
+   FOOTER SECTION
+   ============================== */
+
+/* Main footer parent styling */
+.footer {
+    background-color: #198754;
+    color: white;
+    padding: clamp(40px, 6vw, 60px) clamp(20px, 5vw, 60px);
+    text-align: center;
+} 
+
+/* Hospital heading styling */
+.footer > h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* Footer section heading styling */
+.footer h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Footer content layout */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Footer columns */
+.footer-content > section {
+    flex: 1;
+    text-align: left;
+}
+
+/* Footer navigation links */
+.footer nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Footer navigation hover effect */
+.footer nav a:hover {
+    color: #d1e7dd;
+}
+
+/* Footer information paragraphs */
+.footer section p {
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+/* Footer opening hours emphasis */
+.footer-content strong {
+    font-weight: 600;
+}
+
+/* Footer horizontal separators */
+.footer hr {
+    border: 0;
+    border-top: 1px solid #d1e7dd;
+    margin: 30px 0;
+}
+
+/* Footer copyright */
+.footer > p {
+    margin-top: 50px;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+/* ==============================
+   RESPONSIVE / MOBILE STYLING
+   ============================== */
+
+@media (max-width: 600px) {
+.header-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header-section nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;}
+ 
+    /* Hero section h1 mobile styling */
+    
+/* Hero section paragraph mobile styling */
+    
+    /* Hero section navigation mobile styling */
+   
+    /* Why Choose Us mobile styling */
+    
+    /* Management team mobile h2 styling */
+ 
+    /* Management team mobile p styling */
+    
+/* footer mobile styling */
+.footer > h2 {
+    font-size: 22px;
+}
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-content > section {
+        text-align: center;
+    } 
+}

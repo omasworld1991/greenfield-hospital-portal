@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Greenfield Hospital is a leading healthcare provider offering quality medical services. Our experienced team of doctors and staff are dedicated to providing exceptional care to our patients."
+    />
+    <meta
+      name="keywords"
+      content="Greenfield Hospital, healthcare, medical services, doctors, patient care, quality healthcare, hospital services"
+    />
+    <meta name="author" content="Omas Ago" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header-section">
+      <a href="index.html">
+        <img
+          src="image/greenfield-hospital-logo.svg"
+          alt="hospital logo"
+          loading="lazy"
+          width="30"
+          height="30"
+        />
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="appointment.html">Appointment</a>
+      </nav>
+    </header>
+    <style>
+      .about h1,
+      p {
+        text-align: center;
+        color: grey;
+      }
+
+      .about-items {
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 1% 1%;
+        text-align: center;
+        font-size: small;
+      }
+
+      p {
+        text-align: left;
+        padding-right: 30px;
+      }
+
+      .image {
+        display: flex;
+        justify-content: space-between;
+        /* padding: 2% 3%; */
+        align-items: center;
+      }
+
+      .core-values {
+        text-align: center;
+        padding: 0% 2%;
+        font-size: large;
+        color: #000;
+        margin-right: 30px;
+        border-right: 2px solid black;
+        width: 50%;
+        margin-bottom: 30px;
+      }
+
+      .core-values h4 {
+        font-size: 30px;
+        color: gray;
+      }
+
+      h3 {
+        font-size: 25px;
+        color: grey;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      .hos-image img {
+        border-radius: 12px;
+        width: 100%;
+      }
+
+      .team {
+        display: flex;
+        width: 95%;
+        overflow: hidden;
+        justify-self: center;
+      }
+
+      .team-card img {
+        border-radius: 15px;
+        width: 100%;
+        padding-bottom: 10px;
+        object-fit: cover;
+      }
+
+      .team-card {
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        width: 20%;
+      }
+      .team-card p {
+        text-align: center;
+        padding: 5px;
+      }
+      h2 {
+        text-align: center;
+        color: grey;
+        font-size: 30px;
+        padding-bottom: 20px;
+      }
+    </style>
+    <section class="about-hospital">
+      <div class="about">
+        <h1>About GreenField Hospital</h1>
+        <p>
+          We are a compassionate team of healthcare professionals dedicated
+          <br />to delivering exceptional patient care
+        </p>
+      </div>
+      <div class="about-items">
+        <div class="mission">
+          <h3><u>Mission</u></h3>
+          <p>
+            Our mission is to deliver exceptional, patient-centered care with
+            compassion, expertise, and innovation. We strive to improve the
+            health and well-being of our community by providing high-quality
+            medical services
+          </p>
+        </div>
+        <div class="vision">
+          <h3><u>Vision</u></h3>
+          <p>
+            To be the leading healthcare provider of choice, renowned for
+            excellence, innovation, and compassionate care, transforming lives
+            and advancing health for a thriving community
+          </p>
+        </div>
+        <div class="core">
+          <h3><u>Core Values</u></h3>
+          <p>
+            Our core values - Compassion, Integrity, Excellence, Respect,
+            Teamwork, and Innovation - guide everything we do, shaping our care,
+            decisions, and commitment to delivering exceptional patient
+            experiences every time
+          </p>
+        </div>
+      </div>
+      <section class="image">
+        <div class="core-values">
+          <h4>History of GreenField Hospital,</h4>
+          <p>
+            Established in 1985, GreenField Hospital has been a cornerstone of
+            healthcare in [City/Region]. What began as a small 50-bed facility
+            has grown into a leading medical center with [current number] beds,
+            [number] specialties, and a team of [number] expert doctors and
+            staff.Over the years, we've pioneered treatments, embraced
+            cutting-edge technology, and served generations of families. From
+            our early days treating childhood illnesses to today's advanced
+            surgeries and research, our mission remains: to provide
+            compassionate, world-class care to all.Today, [Hospital Name]
+            continues to innovate, expand, and lead healthcare in [Region], with
+            [mention awards/certifications if any]
+          </p>
+        </div>
+        <div class="hos-image">
+          <img
+            src="image/greenfield-hospital-build.png"
+            alt="Hospital image and its history"
+            width="350"
+            height="350"
+          />
+        </div>
+      </section>
+      
+      <section id="management-team">
+    <h2>Our Management Team</h2>
+      <div class="team">
+        <figure class="team-card" style="width: 25%">
+          <img
+            src="image/dr-maxwell.png"
+            alt="Portrait of Dr. Maxwell Armstrong"
+            width="180"
+            height="220"
+          />
+          <figcaption>
+            <strong>Dr. Maxwell Armstrong</strong><br />
+            Chief Medical Director
+          </figcaption>
+
+          <p>
+            Dr. Maxwell Armstrong is the Chief Medical Director of Greenfield
+            Hospital with over 20 years of experience in healthcare leadership.
+            He is committed to delivering quality, patient-centered care and
+            improving clinical excellence.
+          </p>
+        </figure>
+
+        <figure class="team-card" style="width: 25%">
+          <img
+            src="image/dr-jane.png"
+            alt="Portrait of Dr. Jane Smith"
+            width="180"
+            height="220"
+          />
+          <figcaption>
+            <strong>Dr. Jane Smith</strong><br />
+            Consultant Obstetrics &amp; Gynaecology
+          </figcaption>
+
+          <p>
+            Dr. Jane Smith specializes in women's reproductive health and has
+            successfully managed numerous high-risk pregnancies and
+            gynecological surgeries. She is passionate about improving maternal
+            healthcare.
+          </p>
+        </figure>
+
+        <figure class="team-card" style="width: 25%">
+          <img
+            src="image/dr-gabriel.png"
+            alt="Portrait of Dr. Gabriel Okonkwo"
+            width="180"
+            height="220"
+          />
+          <figcaption>
+            <strong>Dr. Gabriel Okonkwo</strong><br />
+            Consultant General Surgeon
+          </figcaption>
+
+          <p>
+            Dr. Gabriel Okonkwo is an experienced general surgeon with expertise
+            in emergency and minimally invasive procedures. He is dedicated to
+            ensuring safe surgical outcomes and compassionate patient care.
+          </p>
+        </figure>
+
+        <figure class="team-card" style="width: 25%">
+          <img
+            src="image/dr-grace-seun.png"
+            alt="Portrait of Dr. Grace Seun"
+            width="180"
+            height="220"
+          />
+          <figcaption>
+            <strong>Dr. Grace Seun</strong><br />
+            Head of Surgery
+          </figcaption>
+
+          <p>
+            Dr. Grace Seun leads the surgical department and coordinates a team
+            of highly skilled surgeons. She focuses on innovation, teamwork, and
+            maintaining the highest standards of patient safety.
+          </p>
+        </figure>
+
+        <figure class="team-card" style="width: 25%">
+          <img
+            src="image/dr-joseph-bello.png"
+            alt="Portrait of Dr. Joseph Bello"
+            width="180"
+            height="220"
+          />
+          <figcaption>
+            <strong>Dr. Joseph Bello</strong><br />
+            Medical Director
+          </figcaption>
+
+          <p>
+            Dr. Joseph Bello oversees the hospital's clinical operations and
+            quality assurance programs. His vision is to ensure that every
+            patient receives excellent and affordable healthcare services.
+          </p>
+        </figure>
+      </div>
+    </section>
+
+    <!--Footer section-->
+    <footer class="footer">
+      <h2>Greenfield Hospital</h2>
+      <section>
+        <nav>
+          <h3>Quick links</h3>
+          <a href="index.html">Home</a>
+          <br /><br />
+          <a href="about.html">About Us</a>
+          <br /><br />
+          <a href="services.html">Services</a>
+          <br /><br />
+          <a href="gallery.html">Gallery</a>
+          <br /><br />
+          <a href="contact.html">Contact Us</a>
+          <br /><br />
+          <a href="appointment.html">Appointment</a>
+        </nav>
+      </section>
+
+      <hr />
+
+      <section>
+        <h3>Contact Information</h3>
+        <p>📍 123 Greenfield Road, Lagos, Nigeria</p>
+        <p>📞 +234 800 123 4567</p>
+        <p>✉️ info@greenfieldhospital.com</p>
+      </section>
+
+      <hr />
+
+      <section>
+        <h3>Opening Hours</h3>
+        <p>Monday - Friday: 8:00 AM – 6:00 PM</p>
+        <p>Saturday: 9:00 AM – 3:00 PM</p>
+        <p>Sunday: Emergency Only</p>
+      </section>
+
+      <hr />
+
+      <p>&copy; 2026 Greenfield Hospital. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
