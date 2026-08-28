@@ -50,3 +50,20 @@ heroSlider.addEventListener("mouseenter", function () {
 heroSlider.addEventListener("mouseleave", function () {
     slideInterval = setInterval(showNextSlide, 5000);
 });
+
+let topButton = document.querySelector("#topBtn");
+let bottomButton = document.querySelector("#bottomBtn");
+
+topButton.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+bottomButton.addEventListener("click", function () {
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
+});
